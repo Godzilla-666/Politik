@@ -1,10 +1,396 @@
-<a href="index.html" class="election-button">
-   <p> Startseite </p>
-</a>
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Über uns – Politik Heute</title>
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-Hi,<br>
-Ich bin interessiert an der Politik! <br>
-Darum auch diese Internetseite. <br>
-Viel Spaß beim durchlesen!<br>
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fa;
+    color: #10264b;
+}
+
+/* NAVIGATION */
+
+header {
+    background: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #00000010;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #eebd30;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #10264b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #eebd30;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(90deg, #10264bf0, #10264b88),
+    url("https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1800")
+    center/cover;
+    padding: 110px 8%;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+/* ALLGEMEIN */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.title {
+    font-size: 32px;
+    border-left: 7px solid #ffc72c;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+/* ÜBER UNS */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #596579;
+    margin-bottom: 18px;
+}
+
+.about-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* WERTE */
+
+.values {
+    background: white;
+    padding: 65px 5%;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.value-card {
+    padding: 30px;
+    background: #f7f8fa;
+    border-radius: 9px;
+    transition: .3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card .icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.value-card h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.value-card p {
+    color: #596579;
+    line-height: 1.6;
+}
+
+/* LEITBILD */
+
+.mission {
+    background: #10264b;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.mission h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0b1c38;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer p {
+    color: #b8c3d4;
+    margin-top: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🏛 Politik <span>Heute</span></div>
+
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="index.html#themen">Themen</a>
+        <a href="index.html#news">Aktuelles</a>
+        <a href="index.html#positionen">Positionen</a>
+        <a href="ÜberUns.html" class="active">Über uns</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+    <h1>Über uns</h1>
+    <p>
+        Wer wir sind, wofür wir stehen und warum
+        demokratische Beteiligung wichtig ist.
+    </p>
+</section>
+
+<!-- ÜBER UNS -->
+
+<section class="container">
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <h2 class="title">Wer wir sind</h2>
+
+            <p>
+                Willkommen bei Politik Heute!
+                Wir sind eine Plattform für politische
+                Informationen, gesellschaftliche Diskussionen
+                und demokratischen Austausch.
+            </p>
+
+            <p>
+                Unser Ziel ist es, politische Themen verständlich
+                darzustellen und Menschen dazu einzuladen,
+                sich mit unterschiedlichen Perspektiven
+                auseinanderzusetzen.
+            </p>
+
+            <p>
+                Wir möchten einen Ort schaffen, an dem
+                Informationen, Transparenz und ein respektvoller
+                Dialog im Mittelpunkt stehen.
+            </p>
+
+        </div>
+
+        <img class="about-image"
+        src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1000"
+        alt="Menschen im gemeinsamen Austausch">
+
+    </div>
+
+</section>
+
+<!-- UNSERE WERTE -->
+
+<section class="values">
+
+    <h2 class="title">Unsere Werte</h2>
+
+    <div class="values-grid">
+
+        <div class="value-card">
+            <div class="icon">⚖️</div>
+            <h3>Gerechtigkeit</h3>
+            <p>
+                Wir setzen uns für faire Chancen,
+                Gleichberechtigung und gesellschaftlichen
+                Zusammenhalt ein.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">🗣️</div>
+            <h3>Meinungsfreiheit</h3>
+            <p>
+                Unterschiedliche Meinungen gehören
+                zur Demokratie. Wir fördern einen
+                respektvollen Austausch.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">🔍</div>
+            <h3>Transparenz</h3>
+            <p>
+                Verständliche Informationen und
+                nachvollziehbare Aussagen bilden
+                die Grundlage unserer Plattform.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">🌱</div>
+            <h3>Nachhaltigkeit</h3>
+            <p>
+                Wir beschäftigen uns mit Lösungen
+                für eine lebenswerte Zukunft.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">🤝</div>
+            <h3>Zusammenhalt</h3>
+            <p>
+                Eine starke Gesellschaft lebt von
+                gegenseitigem Respekt und Solidarität.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">🏛️</div>
+            <h3>Demokratie</h3>
+            <p>
+                Demokratische Prozesse und politische
+                Beteiligung sind wichtige Grundlagen
+                unseres Zusammenlebens.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LEITBILD -->
+
+<section class="mission">
+
+    <h2>Unsere Vision</h2>
+
+    <p>
+        Wir glauben an eine Gesellschaft, in der Menschen
+        informiert sind, ihre Meinung äußern können und
+        aktiv am demokratischen Leben teilnehmen.
+        Gemeinsam möchten wir politische Themen
+        verständlicher und zugänglicher machen.
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>Politik Heute</h2>
+
+    <p>Informieren. Mitreden. Gestalten.</p>
+
+    <p>
+        <a href="index.html">Startseite</a> |
+        <a href="ÜberUns.html">Über uns</a> |
+        <a href="index.html#kontakt">Kontakt</a>
+    </p>
+
+    <p>© 2026 Politik Heute · Impressum · Datenschutz</p>
+
+</footer>
+
+</body>
+</html>
